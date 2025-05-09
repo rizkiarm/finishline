@@ -98,4 +98,4 @@ Bug reports, feature requests, and pull requests are welcome!
 Please open an issue or PR if you have suggestions or find a bug.
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE.md)
