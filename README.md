@@ -1,6 +1,6 @@
 # FinishLine
 
-**FinishLine** is a web application for tracking and analyzing your progress through multi-step tasks or sessions. It helps you record the time taken for each step, visualize your performance, estimate completion, and manage multiple sessions—all in your browser, with fast, responsive UI and persistent local storage.
+**FinishLine** is a web application for tracking and analyzing your progress on multi-step or repetitive tasks. It helps you record the time taken for each step, visualize your performance, estimate completion, and manage multiple sessions—all in your browser, with fast, responsive UI and persistent local storage.
 
 ![FinishLine UI](assets/screenshot.png)
 
