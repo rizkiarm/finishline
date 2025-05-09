@@ -1,20 +1,38 @@
-# FinishLine – Session and Task Tracker
+# FinishLine
 
-A modern productivity app built with [Preact](https://preactjs.com/) and [DaisyUI](https://daisyui.com/) for tracking sessions and tasks, complete with analytics, keyboard shortcuts, and theme switching.
+**FinishLine** is a web application for tracking and analyzing your progress through multi-step tasks or sessions. It helps you record the time taken for each step, visualize your performance, estimate completion, and manage multiple sessions—all in your browser, with fast, responsive UI and persistent local storage.
 
+![FinishLine UI](assets/screenshot.png)
 
-## ✨ Features
+## Features
 
-- **Sessions:** Create, edit, delete, and export task sessions
-- **Task Timer:** Track time per task with pause/resume
-- **Analytics:** Visualize progress/history with live charts
-- **Deadlines & ETA:** See dynamic alerts and completion forecasts
-- **Undo/Redo:** Revert or repeat actions easily
-- **Keyboard Shortcuts:** Fast workflow for power users
-- **Light/Dark Theme Switch:** Persistent, one-click toggle
+**Session Management**
+- Create, edit, delete, and switch between named sessions.
+- Specify the number of tasks and (optionally) a deadline for each session.
+- Resume or pre-fill progress with average time for previous tasks.
 
+**Task Recording**
+- Start/pause timing for each task step.
+- One-click or spacebar to mark task completion.
+- Undo/redo actions with keyboard shortcuts.
 
-## 🔑 Keyboard Shortcuts
+**Statistics & Visualization**
+- See real-time stats: current task time, average, completed/total.
+- Live ETA (Estimated Time of Arrival) for session completion.
+- Countdown for session deadline.
+- Interactive charts: per-task history, hourly/daily/weekly aggregate stats (count, total, or average duration).
+
+**Data Export**
+- Export session data as CSV.
+
+**User Interface**
+- Responsive, mobile-friendly design.
+- Light/dark theme toggle.
+- Clean, modern look.
+
+**Privacy**
+- All data is stored locally in your browser's `localStorage`. No account or cloud required.
+## Keyboard Shortcuts
 
 | Shortcut         | Action              |
 |------------------|--------------------|
@@ -25,22 +43,20 @@ A modern productivity app built with [Preact](https://preactjs.com/) and [DaisyU
 | Ctrl/Cmd + S     | Edit session       |
 | Ctrl/Cmd + P     | Start/Pause        |
 
+## Project Structure
 
-## 📁 Project Structure
 ```
 src/
-    App.tsx # Main application container
-    components/ # UI components (Navbar, Modals, Stats, etc.)
-    hooks/ # Custom React/Preact hooks
-    utils/ # Utility functions (formatting, storage, etc.)
-    context/
-        ThemeContext.tsx # Global theme context/provider
-    types.ts # TypeScript type definitions
-    constants.ts # App constants (keys, etc.)
-    index.css # Tailwind/DaisyUI styles
+├── App.tsx                # Main application container
+├── components/            # Reusable UI components (Navbar, Modals, Stats, etc.)
+├── hooks/                 # Custom React/Preact hooks
+├── utils/                 # Utility functions (formatting, storage, etc.)
+├── context/               # App-wide state (such as theme).
+├── types.ts               # TypeScript type definitions
+├── constants.ts           # App constants (keys, etc.)
+└── index.css              # Tailwind/DaisyUI styles
 ```
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -69,12 +85,17 @@ npm run preview
 ```
 
 This will build and preview your production-ready app.
+## Tech Stack
 
-## 🤝 Contributing
+- **UI:** [DaisyUI](https://daisyui.com/) + [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide](https://lucide.dev/)
+- **Charts:** [Chart.js](https://www.chartjs.org/)
+- **Framework:** [Preact](https://preactjs.com/)
+- **Build Tool:** [Vite](https://vite.dev)
+## Contributing
 
 Bug reports, feature requests, and pull requests are welcome!
 Please open an issue or PR if you have suggestions or find a bug.
+## License
 
-## 📄 License
-
-MIT
+[MIT](LICENSE)
