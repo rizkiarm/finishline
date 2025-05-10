@@ -1,4 +1,7 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/typescript-node",
-    "forwardPorts": [5173]
+    "name": "NodeJS Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+    "postCreateCommand": "npm install",
+    "forwardPorts": [5173],
+    "remoteUser": "node"
 }
